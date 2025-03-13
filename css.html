@@ -1,0 +1,108 @@
+/* Styling for centering text */
+#para1 {
+  text-align: center;
+}
+
+/* Styling for floating images */
+.float-right {
+  float: right;
+  margin-left: 15px; /* Optional: adds space between the image and text */
+}
+
+.float-left {
+  float: left;
+  margin-right: 15px; /* Optional: adds space between the image and text */
+}
+
+/* Clear floated elements for header and text */
+header, h1, h2, p {
+  clear: both; /* Prevents float from affecting the layout */
+}
+
+/* Styling for the navigation bar */
+nav {
+  float: right; /* Float the nav to the right */
+}
+
+/* Styling for the logo */
+#logo {
+  width: 150px;
+  height: 150px;
+  background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
+  background-size: cover;
+  margin: 20px auto;
+}
+
+/* Position the slogan under the logo */
+#slogan {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Centering the content and styling for the header text */
+header {
+  text-align: center;
+}
+
+/* Styling for the navigation menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Styling for the images and content section */
+.content-container {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Makes sure images stack on smaller screens */
+}
+
+/* Each image and text container */
+.image-text-container {
+  width: 30%; /* Adjust this width to control the size of the container */
+  text-align: center;
+  margin-bottom: 20px; /* Adds space between rows */
+}
+
+.image-text-container img {
+  width: 100%; /* Make image take up the full width of the container */
+  height: auto; /* Ensure image maintains its aspect ratio */
+}
+
+.image-text-container p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #555;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .image-text-container {
+    width: 45%; /* Adjusts the width of the image-text containers */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-text-container {
+    width: 100%; /* Stacks the images and text vertically */
+  }
+}
