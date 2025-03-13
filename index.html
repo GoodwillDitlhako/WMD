@@ -1,54 +1,78 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <title>Collections by BK Proctor</title>
     <link rel="stylesheet" href="mystyle.css">
-  </head> 
+    <style>
+      /* Styling for centering text */
+      #para1 {
+        text-align: center;
+      }
+
+      /* Styling for floating images */
+      .float-right {
+        float: right;
+        margin-left: 15px; /* Optional: adds space between the image and text */
+      }
+
+      .float-left {
+        float: left;
+        margin-right: 15px; /* Optional: adds space between the image and text */
+      }
+
+      /* Styling for the navigation bar */
+      nav {
+        float: right; /* Float the nav to the right */
+      }
+
+      /* Ensures header and other content don't get floated over */
+      header, h1, h2, p {
+        clear: both; /* Prevents float from affecting the layout */
+      }
+
+      /* Navigation styling */
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+      }
+    </style>
+  </head>
   <body>
     <div id="logo"></div>
     <img src="https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj" width="150" height="200" />
-<style>
-#para1{
-  text-align:center;
-}
-</style>
-<float:right>
-  <header>
-    nav{
-      <float:right>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
 
-      </float:right>
-    }
- 
-</float:right>
-</body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <h1 class="p1">EXPRESS YOURSELF</h1>
     <h2>COLLECTIONS BY BK PROCTOR</h2>
-    <p>Go through our website and we will be waiting to help you</p>  
-    <p>MONTH END SPECIAL, WE GOT VARIETY OF OUTFITS MAKE FOR YOU.</p>
-    
-      <float>
-        <img src="https://thevoicebw.com/wp-content/uploads/2024/08/Collections-by-BK-Proctor.jpg"width="150" height="200" />  
-      </float:right>
-      
-    </float>
-    
-      <float:left>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYWlNz_7UjlpvkWJkNk6JXe3yrhsYBmhA5BA&s" width="150" height="200"/>
-      </float:left>
-    
-    
-      <float:right>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLk943LJcycFOqvWI38bxgpvq-02pZuRqEag&s" width="150" height="200"/>
-      </float:right>
-    
-    <p>The world of fashion awaits you and we are the best in town.Our finest quality allows you you to enjoy the drip and also comfort that will last you for ages.</p>
+    <p>Go through our website and we will be waiting to help you</p>
+    <p>MONTH END SPECIAL, WE GOT VARIETY OF OUTFITS MADE FOR YOU.</p>
+
+    <!-- Floating images -->
+    <img src="https://thevoicebw.com/wp-content/uploads/2024/08/Collections-by-BK-Proctor.jpg" width="150" height="200" class="float-right" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYWlNz_7UjlpvkWJkNk6JXe3yrhsYBmhA5BA&s" width="150" height="200" class="float-left" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLk943LJcycFOqvWI38bxgpvq-02pZuRqEag&s" width="150" height="200" class="float-right" />
+
+    <p>The world of fashion awaits you and we are the best in town. Our finest quality allows you to enjoy the drip and also comfort that will last you for ages.</p>
   </body>
 </html>
