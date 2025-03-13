@@ -20,17 +20,39 @@
         margin-right: 15px; /* Optional: adds space between the image and text */
       }
 
+      /* Clear floated elements for header and text */
+      header, h1, h2, p {
+        clear: both; /* Prevents float from affecting the layout */
+      }
+
       /* Styling for the navigation bar */
       nav {
         float: right; /* Float the nav to the right */
       }
 
-      /* Ensures header and other content don't get floated over */
-      header, h1, h2, p {
-        clear: both; /* Prevents float from affecting the layout */
+      /* Styling for the logo */
+      #logo {
+        width: 150px;
+        height: 150px;
+        background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
+        background-size: cover;
+        margin: 20px auto;
       }
 
-      /* Navigation styling */
+      /* Position the slogan under the logo */
+      #slogan {
+        text-align: center;
+        font-size: 2em;
+        margin-top: 10px;
+        color: #333;
+      }
+
+      /* Centering the content and styling for the header text */
+      header {
+        text-align: center;
+      }
+
+      /* Styling for the navigation menu */
       nav ul {
         list-style-type: none;
         margin: 0;
@@ -47,12 +69,30 @@
         color: #000;
         font-weight: bold;
       }
+
+      /* Styling for the images and content section */
+      .content-container {
+        overflow: hidden;
+      }
+
+      .images-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .images-container img {
+        width: 150px;
+        height: 200px;
+      }
     </style>
   </head>
   <body>
+    <!-- Logo Section -->
     <div id="logo"></div>
-    <img src="https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj" width="150" height="200" />
+    <div id="slogan">EXPRESS YOURSELF</div>
 
+    <!-- Navigation Section -->
     <header>
       <nav>
         <ul>
@@ -63,16 +103,21 @@
       </nav>
     </header>
 
-    <h1 class="p1">EXPRESS YOURSELF</h1>
     <h2>COLLECTIONS BY BK PROCTOR</h2>
     <p>Go through our website and we will be waiting to help you</p>
     <p>MONTH END SPECIAL, WE GOT VARIETY OF OUTFITS MADE FOR YOU.</p>
 
-    <!-- Floating images -->
-    <img src="https://thevoicebw.com/wp-content/uploads/2024/08/Collections-by-BK-Proctor.jpg" width="150" height="200" class="float-right" />
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYWlNz_7UjlpvkWJkNk6JXe3yrhsYBmhA5BA&s" width="150" height="200" class="float-left" />
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLk943LJcycFOqvWI38bxgpvq-02pZuRqEag&s" width="150" height="200" class="float-right" />
+    <!-- Image Section -->
+    <div class="content-container">
+      <div class="images-container">
+        <img src="https://thevoicebw.com/wp-content/uploads/2024/08/Collections-by-BK-Proctor.jpg" alt="Collection Image 1" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYWlNz_7UjlpvkWJkNk6JXe3yrhsYBmhA5BA&s" alt="Collection Image 2" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLk943LJcycFOqvWI38bxgpvq-02pZuRqEag&s" alt="Collection Image 3" />
+      </div>
+    </div>
 
     <p>The world of fashion awaits you and we are the best in town. Our finest quality allows you to enjoy the drip and also comfort that will last you for ages.</p>
   </body>
 </html>
+
+
