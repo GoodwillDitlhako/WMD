@@ -1,45 +1,41 @@
-/* Styling for the images and content section */
-.content-container {
-  overflow: hidden;
-  margin-top: 20px;
-}
-
-.images-container {
+/* Styling for the logo section */
+#logo-container {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: center; /* Center the logos horizontally */
+  align-items: center; /* Center the logos vertically */
+  margin: 20px auto; /* Center the whole container with some spacing */
+  position: relative;
 }
 
-/* Each image and text container */
-.image-text-container {
-  width: 30%; /* Adjust this width to control the size of the container */
+#logo {
+  width: 150px;
+  height: 150px;
+  background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
+  background-size: cover;
+}
+
+/* Small Logos next to the main logo */
+.small-logo {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin-left: 15px; /* Space between logos */
+  border-radius: 50%; /* To make the small logos circular */
+}
+
+/* Specific images for small logos */
+#logo1 {
+  background-image: url('https://example.com/logo1.png'); /* Replace with your logo URL */
+}
+
+#logo2 {
+  background-image: url('https://example.com/logo2.png'); /* Replace with your logo URL */
+}
+
+/* Position the slogan under the logo */
+#slogan {
   text-align: center;
-  margin-bottom: 20px; /* Adds space between rows */
-}
-
-/* Make the images equal in height */
-.image-text-container img {
-  width: 100%; /* Make image take up the full width of the container */
-  height: 250px; /* Set a fixed height for all images */
-  object-fit: cover; /* Ensures images cover the space without distortion */
-}
-
-.image-text-container p {
+  font-size: 2em;
   margin-top: 10px;
-  font-size: 1em;
-  color: #555;
+  color: #333;
 }
-
-/* Responsive Design: Adjust layout for smaller screens */
-@media (max-width: 768px) {
-  .image-text-container {
-    width: 45%; /* Make images and text take more space on smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .image-text-container {
-    width: 100%; /* Stack the images vertically on very small screens */
-  }
-}
-
