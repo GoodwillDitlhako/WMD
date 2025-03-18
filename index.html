@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collections by BK Proctor</title>
     <link rel="stylesheet" href="mystyle.css">
     <style>
@@ -79,12 +81,14 @@
       .images-container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap; /* Ensures responsiveness */
       }
 
       /* Each image and text container */
       .image-text-container {
         width: 30%; /* Adjust this width to control the size of the container */
         text-align: center;
+        margin-bottom: 20px; /* Adds space between rows */
       }
 
       .image-text-container img {
@@ -96,6 +100,19 @@
         margin-top: 10px;
         font-size: 1em;
         color: #555;
+      }
+
+      /* Responsive Design: Adjust layout for smaller screens */
+      @media (max-width: 768px) {
+        .image-text-container {
+          width: 45%; /* Make images and text take more space on smaller screens */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .image-text-container {
+          width: 100%; /* Stack the images vertically on very small screens */
+        }
       }
     </style>
   </head>
@@ -125,7 +142,7 @@
         <!-- Image 1 with Text -->
         <div class="image-text-container">
           <img src="https://thevoicebw.com/wp-content/uploads/2024/08/Collections-by-BK-Proctor.jpg" alt="Collection Image 1" />
-          <p> Stylish and Trendy.BK Sunglasses for P800.00y</p>
+          <p>Stylish and Trendy.BK Sunglasses for P800.00</p>
         </div>
 
         <!-- Image 2 with Text -->
