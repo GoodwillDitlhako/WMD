@@ -108,13 +108,13 @@
 
       .images-container {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap; /* Ensures responsiveness */
+        flex-wrap: wrap; /* Ensures images wrap into multiple rows */
+        justify-content: space-between; /* Distribute space evenly between items */
       }
 
       /* Each image and text container */
       .image-text-container {
-        width: 30%; /* Adjust this width to control the size of the container */
+        width: 30%; /* Each image takes up 30% of the row width */
         text-align: center;
         margin-bottom: 20px; /* Adds space between rows */
       }
@@ -191,157 +191,26 @@
           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLk943LJcycFOqvWI38bxgpvq-02pZuRqEag&s" alt="Collection Image 3" />
           <p>Exclusive Collection: Bold and Elegant.Proctor Jacket for P5000.00</p>
         </div>
+        
+        <!-- Image 4 with Text -->
+        <div class="image-text-container">
+          <img src="https://i.pinimg.com/736x/be/e4/97/bee49721c82938485c6e269c60a652a6.jpg" alt="Collection Image 4" />
+          <p>Limited edition shoes: Stylish Shoes for P3800.00</p>
+        </div>
+        
+        <!-- Image 5 with Text -->
+        <div class="image-text-container">
+          <img src="https://th.bing.com/th/id/OIP.j4CS9Kwjy_7NVNxUDheSkwHaIm?rs=1&pid=ImgDetMain" alt="Collection Image 5" />
+          <p>Comfy Slides for P900.00</p>
+        </div>
+
+        <!-- Image 6 with Text -->
+        <div class="image-text-container">
+          <img src="https://th.bing.com/th/id/OIP.-nJ_Nk8Ab3dH2O9GB8PaEgHaLG?rs=1&pid=ImgDetMain" alt="Collection Image 6" />
+          <p>Comfortable and Chic.Proctor Sandals for P1200.00</p>
+        </div>
       </div>
     </div>
-        <!- - Image 4 with Text - ->
-         <div class="image-text-container">
-           <img src="https://i.pinimg.com/736x/be/e4/97/bee49721c82938485c6e269c60a652a6.jpg" alt"Collection Image 4
-           <p> Limited edition shoes:Stylish Shoes for P3800.00</p>
-             <!- - Image 5 with Text - ->
-         <div class="image-text-container">
-           <img src="https://th.bing.com/th/id/OIP.j4CS9Kwjy_7NVNxUDheSkwHaIm?rs=1&pid=ImgDetMain" alt"Collection Image 5
-           <p>Comfy Slides for P900.00</p>
-            <!- - Image 6 with Text - ->
-               <div class="image-text-container">
-           <img src="https://th.bing.com/th/id/OIP.-nJ_Nk8Ab3dH2O9GB8PaEgHaLG?rs=1&pid=ImgDetMain" alt"Collection Image 6
-                 
-#para1 {
-  text-align: center;
-}
-
-/* Styling for floating images */
-.float-right {
-  float: right;
-  margin-left: 15px; /* Optional: adds space between the image and text */
-}
-
-.float-left {
-  float: left;
-  margin-right: 15px; /* Optional: adds space between the image and text */
-}
-
-/* Clear floated elements for header and text */
-header, h1, h2, p {
-  clear: both; /* Prevents float from affecting the layout */
-}
-
-/* Styling for the navigation bar */
-nav {
-  float: right; /* Float the nav to the right */
-}
-
-/* Styling for the logo section */
-#logo-container {
-  display: flex;
-  justify-content: center; /* Center the logos horizontally */
-  align-items: center; /* Center the logos vertically */
-  margin: 20px auto; /* Center the whole container with some spacing */
-  position: relative;
-  flex-direction: column; /* Stack the logos vertically */
-}
-
-#logo {
-  width: 150px;
-  height: 150px;
-  background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
-  background-size: cover;
-  margin-bottom: 15px; /* Adds space between the main logo and small logos */
-}
-
-/* Small Logos next to the main logo */
-.small-logo {
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  margin-left: 15px; /* Space between logos */
-  border-radius: 50%; /* To make the small logos circular */
-  margin-top: 10px; /* Adds space between the logos */
-}
-
-/* Specific images for small logos */
-#logo1 {
-  background-image: url('https://example.com/logo1.png'); /* Replace with your logo URL */
-}
-
-#logo2 {
-  background-image: url('https://example.com/logo2.png'); /* Replace with your logo URL */
-}
-
-/* Position the slogan under the logo */
-#slogan {
-  text-align: center;
-  font-size: 2em;
-  margin-top: 10px;
-  color: #333;
-}
-
-/* Centering the content and styling for the header text */
-header {
-  text-align: center;
-}
-
-/* Styling for the navigation menu */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-
-/* Styling for the images and content section */
-.content-container {
-  overflow: hidden;
-  margin-top: 20px;
-}
-
-.images-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; /* Ensures responsiveness */
-}
-
-/* Each image and text container */
-.image-text-container {
-  width: 30%; /* Adjust this width to control the size of the container */
-  text-align: center;
-  margin-bottom: 20px; /* Adds space between rows */
-}
-
-/* Make the images equal in height */
-.image-text-container img {
-  width: 100%; /* Make image take up the full width of the container */
-  height: 250px; /* Set a fixed height for all images */
-  object-fit: cover; /* Ensures images cover the space without distortion */
-}
-
-.image-text-container p {
-  margin-top: 10px;
-  font-size: 1em;
-  color: #555;
-}
-
-/* Responsive Design: Adjust layout for smaller screens */
-@media (max-width: 768px) {
-  .image-text-container {
-    width: 45%; /* Make images and text take more space on smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .image-text-container {
-    width: 100%; /* Stack the images vertically on very small screens */
-  }
-}
 
     <p>The world of fashion awaits you and we are the best in town. Our finest quality allows you to enjoy the drip and also comfort that will last you for ages.</p>
   </body>
