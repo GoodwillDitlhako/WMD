@@ -32,13 +32,39 @@
         float: right; /* Float the nav to the right */
       }
 
-      /* Styling for the logo */
+      /* Styling for the logo section */
+      #logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        position: relative;
+      }
+
+      /* Main Logo */
       #logo {
         width: 150px;
         height: 150px;
         background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
         background-size: cover;
-        margin: 20px auto;
+      }
+
+      /* Small Logos next to the main logo */
+      .small-logo {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        margin-left: 15px; /* Space between logos */
+        border-radius: 50%; /* To make the small logos circular */
+      }
+
+      /* Specific images for small logos */
+      #logo1 {
+        background-image: url('https://example.com/logo1.png'); /* Change to your logo URL */
+      }
+
+      #logo2 {
+        background-image: url('https://example.com/logo2.png'); /* Change to your logo URL */
       }
 
       /* Position the slogan under the logo */
@@ -91,9 +117,11 @@
         margin-bottom: 20px; /* Adds space between rows */
       }
 
+      /* Make the images equal in height */
       .image-text-container img {
         width: 100%; /* Make image take up the full width of the container */
-        height: auto; /* Ensure image maintains its aspect ratio */
+        height: 250px; /* Set a fixed height for all images */
+        object-fit: cover; /* Ensures images cover the space without distortion */
       }
 
       .image-text-container p {
@@ -118,7 +146,12 @@
   </head>
   <body>
     <!-- Logo Section -->
-    <div id="logo"></div>
+    <div id="logo-container">
+      <div id="logo"></div> <!-- Main Logo -->
+      <!-- Small Logos -->
+      <div class="small-logo" id="logo1"></div>
+      <div class="small-logo" id="logo2"></div>
+    </div>
     <div id="slogan">EXPRESS YOURSELF</div>
 
     <!-- Navigation Section -->
