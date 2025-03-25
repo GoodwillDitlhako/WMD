@@ -6,40 +6,13 @@
     <title>Collections by BK Proctor</title>
     <link rel="stylesheet" href="mystyle.css">
     <style>
-      /* Styling for centering text */
-      #para1 {
-        text-align: center;
-      }
-
-      /* Styling for floating images */
-      .float-right {
-        float: right;
-        margin-left: 15px; /* Optional: adds space between the image and text */
-      }
-
-      .float-left {
-        float: left;
-        margin-right: 15px; /* Optional: adds space between the image and text */
-      }
-
-      /* Clear floated elements for header and text */
-      header, h1, h2, p {
-        clear: both; /* Prevents float from affecting the layout */
-      }
-
-      /* Styling for the navigation bar */
-      nav {
-        float: right; /* Float the nav to the right */
-      }
-
-      /* Styling for the logo section */
+      /* Centering the logo and slogan */
       #logo-container {
         display: flex;
-        justify-content: center; /* Center the logos horizontally */
-        align-items: center; /* Center the logos vertically */
-        margin: 20px auto; /* Center the whole container with some spacing */
-        position: relative;
-        flex-direction: column; /* Stack the logos vertically */
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto; /* Remove extra space */
       }
 
       #logo {
@@ -47,42 +20,26 @@
         height: 150px;
         background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
         background-size: cover;
-        margin-bottom: 15px; /* Adds space between the main logo and small logos */
       }
 
-      /* Small Logos next to the main logo */
-      .small-logo {
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        margin-left: 15px; /* Space between logos */
-        border-radius: 50%; /* To make the small logos circular */
-        margin-top: 10px; /* Adds space between the logos */
-      }
-
-      /* Specific images for small logos */
-      #logo1 {
-        background-image: url('https://example.com/logo1.png'); /* Replace with your logo URL */
-      }
-
-      #logo2 {
-        background-image: url('https://example.com/logo2.png'); /* Replace with your logo URL */
-      }
-
-      /* Position the slogan under the logo */
+      /* Reduce space between logo and slogan */
       #slogan {
         text-align: center;
         font-size: 2em;
-        margin-top: 10px;
+        margin-top: 5px; /* Reduce spacing */
         color: #333;
       }
 
-      /* Centering the content and styling for the header text */
+      /* Centering the content */
       header {
         text-align: center;
       }
 
       /* Styling for the navigation menu */
+      nav {
+        float: right;
+      }
+
       nav ul {
         list-style-type: none;
         margin: 0;
@@ -100,7 +57,7 @@
         font-weight: bold;
       }
 
-      /* Styling for the images and content section */
+      /* Styling for images and content */
       .content-container {
         overflow: hidden;
         margin-top: 20px;
@@ -108,22 +65,20 @@
 
       .images-container {
         display: flex;
-        flex-wrap: wrap; /* Ensures images wrap into multiple rows */
-        justify-content: space-between; /* Distribute space evenly between items */
+        flex-wrap: wrap;
+        justify-content: space-between;
       }
 
-      /* Each image and text container */
       .image-text-container {
-        width: 30%; /* Each image takes up 30% of the row width */
+        width: 30%;
         text-align: center;
-        margin-bottom: 20px; /* Adds space between rows */
+        margin-bottom: 20px;
       }
 
-      /* Make the images equal in height */
       .image-text-container img {
-        width: 100%; /* Make image take up the full width of the container */
-        height: 250px; /* Set a fixed height for all images */
-        object-fit: cover; /* Ensures images cover the space without distortion */
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
       }
 
       .image-text-container p {
@@ -132,16 +87,16 @@
         color: #555;
       }
 
-      /* Responsive Design: Adjust layout for smaller screens */
+      /* Responsive Design */
       @media (max-width: 768px) {
         .image-text-container {
-          width: 45%; /* Make images and text take more space on smaller screens */
+          width: 45%;
         }
       }
 
       @media (max-width: 480px) {
         .image-text-container {
-          width: 100%; /* Stack the images vertically on very small screens */
+          width: 100%;
         }
       }
     </style>
@@ -150,9 +105,6 @@
     <!-- Logo Section -->
     <div id="logo-container">
       <div id="logo"></div> <!-- Main Logo -->
-      <!-- Small Logos -->
-      <div class="small-logo" id="logo1"></div>
-      <div class="small-logo" id="logo2"></div>
     </div>
     <div id="slogan">EXPRESS YOURSELF</div>
 
@@ -171,43 +123,32 @@
     <p>Go through our website and we will be waiting to help you</p>
     <p>MONTH END SPECIAL, WE GOT VARIETY OF OUTFITS MADE FOR YOU.</p>
 
-    <!-- Image Section with Text Next to Images -->
+    <!-- Image Section with Text -->
     <div class="content-container">
       <div class="images-container">
-        <!-- Image 1 with Text -->
         <div class="image-text-container">
           <img src="https://thevoicebw.com/wp-content/uploads/2024/08/Collections-by-BK-Proctor.jpg" alt="Collection Image 1" />
-          <p>Stylish and Trendy.BK Sunglasses for P800.00</p>
+          <p>Stylish and Trendy. BK Sunglasses for P800.00</p>
         </div>
-
-        <!-- Image 2 with Text -->
         <div class="image-text-container">
           <img src="https://www.celebrityworld.co.bw/wp-content/uploads/2022/04/bk3-1024x951.jpg" alt="Collection Image 2" />
-          <p>Comfort Meets Fashion.Proctor Leather Shoes for P2500.00</p>
+          <p>Comfort Meets Fashion. Proctor Leather Shoes for P2500.00</p>
         </div>
-
-        <!-- Image 3 with Text -->
         <div class="image-text-container">
           <img src="https://www.ebw.co.bw/wp-content/uploads/2023/04/340750046_256372103502973_408375718205622710_n.jpeg" alt="Collection Image 3" />
-          <p>Exclusive Collection: Bold and Elegant.Proctor Jacket for P5000.00</p>
+          <p>Exclusive Collection: Bold and Elegant. Proctor Jacket for P5000.00</p>
         </div>
-        
-        <!-- Image 4 with Text -->
         <div class="image-text-container">
           <img src="https://i.pinimg.com/736x/be/e4/97/bee49721c82938485c6e269c60a652a6.jpg" alt="Collection Image 4" />
           <p>Limited edition shoes: Stylish Shoes for P3800.00</p>
         </div>
-        
-        <!-- Image 5 with Text -->
         <div class="image-text-container">
           <img src="https://th.bing.com/th/id/OIP.UwGetgmbDot8u7-ca-yk-QHaLG?rs=1&pid=ImgDetMain" alt="Collection Image 5" />
           <p>Comfy Slides for P900.00</p>
         </div>
-
-        <!-- Image 6 with Text -->
         <div class="image-text-container">
           <img src="https://th.bing.com/th/id/OIP.-nJ_Nk8Ab3dH2O9GB8PaEgHaLG?rs=1&pid=ImgDetMain" alt="Collection Image 6" />
-          <p>Comfortable and Chic.Proctor Sandals for P1200.00</p>
+          <p>Comfortable and Chic. Proctor Round Neck for P1200.00</p>
         </div>
       </div>
     </div>
@@ -215,4 +156,3 @@
     <p>The world of fashion awaits you and we are the best in town. Our finest quality allows you to enjoy the drip and also comfort that will last you for ages.</p>
   </body>
 </html>
-
