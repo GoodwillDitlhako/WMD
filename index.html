@@ -1,5 +1,4 @@
-
-  <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,10 +6,7 @@
     <title>Collections by BK Proctor</title>
     <link rel="stylesheet" href="mystyle.css">
     <style>
-      body {
-        font-family: Arial, sans-serif;
-      }
-
+      /* Centering the logo and slogan */
       #logo-container {
         display: flex;
         justify-content: center;
@@ -20,19 +16,20 @@
       }
 
       #logo {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
         background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
         background-size: cover;
       }
 
       #slogan {
         text-align: center;
-        font-size: 1.5em;
+        font-size: 2em;
         margin-top: 5px;
         color: #333;
       }
 
+      /* Navigation Bar */
       header {
         text-align: center;
         display: flex;
@@ -58,6 +55,7 @@
         font-weight: bold;
       }
 
+      /* Search Bar */
       .search-container {
         display: flex;
         align-items: center;
@@ -70,50 +68,99 @@
         border-radius: 5px;
       }
 
-      .search-container button,
+      .search-container button {
+        padding: 6px 10px;
+        margin-left: 5px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .search-container button:hover {
+        background-color: #555;
+      }
+
+      /* Styling for images and content */
+      .content-container {
+        overflow: hidden;
+        margin-top: 20px;
+      }
+
+      .images-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .image-text-container {
+        width: 30%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .image-text-container img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .image-text-container p {
+        margin-top: 10px;
+        font-size: 1em;
+        color: #555;
+      }
+
+      /* Add to Cart Button */
       .add-to-cart {
+        display: inline-block;
         padding: 10px 15px;
-        background-color: #2e2e2e;
+        background-color: #ff6600;
         color: white;
         border: none;
         border-radius: 5px;
         font-size: 1em;
         cursor: pointer;
+        margin-top: 10px;
       }
 
-      .search-container button:hover,
       .add-to-cart:hover {
-        background-color: #555;
+        background-color: #cc5500;
       }
 
-      .image-text-container img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .image-text-container {
+          width: 45%;
+        }
       }
 
-      .image-text-container img:hover {
-        transform: scale(1.05);
-        opacity: 0.9;
+      @media (max-width: 480px) {
+        .image-text-container {
+          width: 100%;
+        }
       }
     </style>
   </head>
   <body>
+    <!-- Logo Section -->
     <div id="logo-container">
-      <div id="logo"></div>
+      <div id="logo"></div> <!-- Main Logo -->
     </div>
     <div id="slogan">EXPRESS YOURSELF</div>
 
+    <!-- Navigation Section -->
     <header>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="collections.html">Shop</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- Search Bar -->
       <div class="search-container">
         <input type="text" placeholder="Search for products..." />
         <button>Search</button>
@@ -121,16 +168,45 @@
     </header>
 
     <h2>COLLECTIONS BY BK PROCTOR</h2>
-    <p>Browse our exclusive collections and find your perfect style.</p>
+    <p>Go through our website and we will be waiting to help you</p>
+    <p>MONTH END SPECIAL, WE GOT VARIETY OF OUTFITS MADE FOR YOU.</p>
 
+    <!-- Image Section with Text and Add to Cart Button -->
     <div class="content-container">
       <div class="images-container">
         <div class="image-text-container">
           <img src="https://thevoicebw.com/wp-content/uploads/2024/08/Collections-by-BK-Proctor.jpg" alt="Collection Image 1" />
-          <p>BK Sunglasses for P800.00</p>
+          <p>Stylish and Trendy. BK Sunglasses for P800.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="image-text-container">
+          <img src="https://www.celebrityworld.co.bw/wp-content/uploads/2022/04/bk3-1024x951.jpg" alt="Collection Image 2" />
+          <p>Comfort Meets Fashion. Proctor Leather Shoes for P2500.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="image-text-container">
+          <img src="https://www.ebw.co.bw/wp-content/uploads/2023/04/340750046_256372103502973_408375718205622710_n.jpeg" alt="Collection Image 3" />
+          <p>Exclusive Collection: Bold and Elegant. Proctor Jacket for P5000.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="image-text-container">
+          <img src="https://i.pinimg.com/736x/be/e4/97/bee49721c82938485c6e269c60a652a6.jpg" alt="Collection Image 4" />
+          <p>Limited edition shoes: Stylish Shoes for P3800.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="image-text-container">
+          <img src="https://th.bing.com/th/id/OIP.UwGetgmbDot8u7-ca-yk-QHaLG?rs=1&pid=ImgDetMain" alt="Collection Image 5" />
+          <p>Comfy Slides for P900.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="image-text-container">
+          <img src="https://th.bing.com/th/id/OIP.-nJ_Nk8Ab3dH2O9GB8PaEgHaLG?rs=1&pid=ImgDetMain" alt="Collection Image 6" />
+          <p>Comfortable and Chic. Proctor Sandals for P1200.00</p>
           <button class="add-to-cart">Add to Cart</button>
         </div>
       </div>
     </div>
+
+    <p>The world of fashion awaits you and we are the best in town. Our finest quality allows you to enjoy the drip and also comfort that will last you for ages.</p>
   </body>
 </html>
