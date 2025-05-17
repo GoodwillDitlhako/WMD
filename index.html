@@ -1,214 +1,175 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Collections by BK Proctor</title>
-    <link rel="stylesheet" href="mystyle.css">
-    <style>
-      /* Centering the logo and slogan */
-      #logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 0 auto;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collections by BK Proctor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
 
-      #logo {
-        width: 150px;
-        height: 150px;
-        background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
-        background-size: cover;
-      }
+    #logo {
+      width: 150px;
+      height: 150px;
+      background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
 
-      #slogan {
-        text-align: center;
-        font-size: 2em;
-        margin-top: 5px;
-        color: #333;
-      }
+    #slogan {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 10px;
+      font-weight: bold;
+    }
 
-      /* Navigation Bar */
-      header {
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-      }
+    .navbar-brand {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
 
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
+    .hero-text {
+      text-align: center;
+      margin: 2rem 0;
+    }
 
-      nav ul li {
-        display: inline;
-        margin-right: 20px;
-      }
+    .product-card img {
+      height: 250px;
+      object-fit: cover;
+    }
 
-      nav ul li a {
-        text-decoration: none;
-        color: #000;
-        font-weight: bold;
-      }
+    .add-to-cart {
+      background-color: #ff6600;
+      border: none;
+      font-weight: bold;
+    }
 
-      /* Search Bar */
-      .search-container {
-        display: flex;
-        align-items: center;
-      }
+    .add-to-cart:hover {
+      background-color: #cc5500;
+    }
 
-      .search-container input {
-        padding: 5px;
-        font-size: 1em;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-      }
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background-color: #111;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
 
-      .search-container button {
-        padding: 6px 10px;
-        margin-left: 5px;
-        background-color: #333;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      .search-container button:hover {
-        background-color: #555;
-      }
-
-      /* Styling for images and content */
-      .content-container {
-        overflow: hidden;
-        margin-top: 20px;
-      }
-
-      .images-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-
-      .image-text-container {
-        width: 30%;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      .image-text-container img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-      }
-
-      .image-text-container p {
-        margin-top: 10px;
-        font-size: 1em;
-        color: #555;
-      }
-
-      /* Add to Cart Button */
-      .add-to-cart {
-        display: inline-block;
-        padding: 10px 15px;
-        background-color: #ff6600;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 1em;
-        cursor: pointer;
-        margin-top: 10px;
-      }
-
-      .add-to-cart:hover {
-        background-color: #cc5500;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .image-text-container {
-          width: 45%;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .image-text-container {
-          width: 100%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Logo Section -->
-    <div id="logo-container">
-      <div id="logo"></div> <!-- Main Logo -->
-    </div>
+  <!-- Logo & Slogan -->
+  <div class="text-center my-4">
+    <div id="logo"></div>
     <div id="slogan">EXPRESS YOURSELF</div>
+  </div>
 
-    <!-- Navigation Section -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="products.html">Products</a></li>
-          
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BK PROCTOR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
         </ul>
-      </nav>
-
-      <!-- Search Bar -->
-      <div class="search-container">
-        <input type="text" placeholder="Search for products..." />
-        <button>Search</button>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search for products..." />
+          <button class="btn btn-dark" type="submit">Search</button>
+        </form>
       </div>
-    </header>
+    </div>
+  </nav>
 
+  <!-- Intro Text -->
+  <div class="hero-text container">
     <h2>COLLECTIONS BY BK PROCTOR</h2>
     <p>Go through our website and we will be waiting to help you</p>
-    <p>MONTH END SPECIAL, WE GOT VARIETY OF OUTFITS MADE FOR YOU.</p>
+    <p><strong>MONTH END SPECIAL:</strong> We’ve got a variety of outfits made for you.</p>
+  </div>
 
-    <!-- Image Section with Text and Add to Cart Button -->
-    <div class="content-container">
-      <div class="images-container">
-        <div class="image-text-container">
-          <img src="https://thevoicebw.com/wp-content/uploads/2024/08/Collections-by-BK-Proctor.jpg" alt="Collection Image 1" />
-          <p>Stylish and Trendy. BK Sunglasses for P800.00</p>
-          <button class="add-to-cart">Add to Cart</button>
+  <!-- Product Grid -->
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="https://thevoicebw.com/wp-content/uploads/2024/08/Collections-by-BK-Proctor.jpg" class="card-img-top" alt="Sunglasses">
+          <div class="card-body text-center">
+            <p class="card-text">Stylish and Trendy. BK Sunglasses for P800.00</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+          </div>
         </div>
-        <div class="image-text-container">
-          <img src="https://www.celebrityworld.co.bw/wp-content/uploads/2022/04/bk3-1024x951.jpg" alt="Collection Image 2" />
-          <p>Comfort Meets Fashion. Proctor Leather Shoes for P2500.00</p>
-          <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="https://www.celebrityworld.co.bw/wp-content/uploads/2022/04/bk3-1024x951.jpg" class="card-img-top" alt="Shoes">
+          <div class="card-body text-center">
+            <p class="card-text">Comfort Meets Fashion. Proctor Leather Shoes for P2500.00</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+          </div>
         </div>
-        <div class="image-text-container">
-          <img src="https://www.ebw.co.bw/wp-content/uploads/2023/04/340750046_256372103502973_408375718205622710_n.jpeg" alt="Collection Image 3" />
-          <p>Exclusive Collection: Bold and Elegant. Proctor Jacket for P5000.00</p>
-          <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="https://www.ebw.co.bw/wp-content/uploads/2023/04/340750046_256372103502973_408375718205622710_n.jpeg" class="card-img-top" alt="Jacket">
+          <div class="card-body text-center">
+            <p class="card-text">Bold and Elegant. Proctor Jacket for P5000.00</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+          </div>
         </div>
-        <div class="image-text-container">
-          <img src="BK Pandas.jpg" alt="Collection Image 4" />
-          <p>Limited edition shoes: Stylish Shoes for P3800.00</p>
-          <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="BK Pandas.jpg" class="card-img-top" alt="Limited Edition Shoes">
+          <div class="card-body text-center">
+            <p class="card-text">Limited Edition: Stylish Shoes for P3800.00</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+          </div>
         </div>
-        <div class="image-text-container">
-          <img src="https://th.bing.com/th/id/OIP.UwGetgmbDot8u7-ca-yk-QHaLG?rs=1&pid=ImgDetMain" alt="Collection Image 5" />
-          <p>Comfy Slides for P900.00</p>
-          <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="https://th.bing.com/th/id/OIP.UwGetgmbDot8u7-ca-yk-QHaLG?rs=1&pid=ImgDetMain" class="card-img-top" alt="Slides">
+          <div class="card-body text-center">
+            <p class="card-text">Comfy Slides for P900.00</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+          </div>
         </div>
-        <div class="image-text-container">
-          <img src="https://th.bing.com/th/id/OIP.-nJ_Nk8Ab3dH2O9GB8PaEgHaLG?rs=1&pid=ImgDetMain" alt="Collection Image 6" />
-          <p>Comfortable and Chic. Proctor Sandals for P1200.00</p>
-          <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="https://th.bing.com/th/id/OIP.-nJ_Nk8Ab3dH2O9GB8PaEgHaLG?rs=1&pid=ImgDetMain" class="card-img-top" alt="Sandals">
+          <div class="card-body text-center">
+            <p class="card-text">Chic & Comfy. Proctor Sandals for P1200.00</p>
+            <button class="btn add-to-cart">Add to Cart</button>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <p>The world of fashion awaits you and we are the best in town. Our finest quality allows you to enjoy the drip and also comfort that will last you for ages.</p>
-  </body>
+  <!-- Outro Text -->
+  <div class="container text-center mt-4">
+    <p>The world of fashion awaits you. We're the best in town — with quality, comfort, and drip that lasts.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 COLLECTIONS BY BK PROCTOR</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
