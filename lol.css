@@ -1,0 +1,57 @@
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    #logo {
+      width: 150px;
+      height: 150px;
+      background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+
+    #slogan {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .hero-text {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .product-card img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .add-to-cart {
+      background-color: #ff6600;
+      border: none;
+      font-weight: bold;
+    }
+
+    .add-to-cart:hover {
+      background-color: #cc5500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background-color: #111;
+      color: white;
+      margin-top: 3rem;
+    }
+  
