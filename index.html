@@ -4,58 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Collections by BK Proctor</title>
-<link rel="stylesheet" href="lol.css">
   <!-- Bootstrap CSS -->
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
 <body>
-
-  <!-- Logo & Slogan -->
-  <div class="text-center my-4">
-    <div id="logo"></div>
-    <div id="slogan">EXPRESS YOURSELF</div>
-  </div>
-
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light border-bottom px-4">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
       <a class="navbar-brand" href="#">BK PROCTOR</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search for products..." />
-          <button class="btn btn-dark" type="submit">Search</button>
+        <form class="d-flex search-form">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit"><i class="fas fa-search"></i></button>
         </form>
+        <a href="cart.html" class="ms-3 text-dark"><i class="fas fa-shopping-bag"></i></a>
       </div>
     </div>
   </nav>
 
-  <!-- Intro Text -->
-  <div class="hero-text container">
-    <h2>COLLECTIONS BY BK PROCTOR</h2>
-    <p>Go through our website and we will be waiting to help you</p>
-    <p><strong>MONTH END SPECIAL:</strong> We’ve got a variety of outfits made for you.</p>
-  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>COLLECTIONS BY BK PROCTOR</h1>
+      <p>Premium fashion with Botswana's finest craftsmanship. Express yourself with our latest collection.</p>
+      <a href="products.html" class="btn btn-dark">Shop Now</a>
+    </div>
+  </section>
 
-  <!-- Product Grid -->
-  <div class="container">
+  <!-- Featured Products -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-12 mb-5">
+        <h2 class="text-center">FEATURED PRODUCTS</h2>
+      </div>
+    </div>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card product-card">
           <img src="https://thevoicebw.com/wp-content/uploads/2024/08/Collections-by-BK-Proctor.jpg" class="card-img-top" alt="Sunglasses">
           <div class="card-body text-center">
-            <p class="card-text">Stylish and Trendy. BK Sunglasses for P800.00</p>
+            <h5 class="card-title">BK Sunglasses</h5>
+            <p class="card-text">Stylish and Trendy</p>
+            <p class="price">P800.00</p>
             <button class="btn add-to-cart">Add to Cart</button>
           </div>
         </div>
@@ -64,7 +66,9 @@
         <div class="card product-card">
           <img src="https://www.celebrityworld.co.bw/wp-content/uploads/2022/04/bk3-1024x951.jpg" class="card-img-top" alt="Shoes">
           <div class="card-body text-center">
-            <p class="card-text">Comfort Meets Fashion. Proctor Leather Shoes for P2500.00</p>
+            <h5 class="card-title">Proctor Leather Shoes</h5>
+            <p class="card-text">Comfort Meets Fashion</p>
+            <p class="price">P2500.00</p>
             <button class="btn add-to-cart">Add to Cart</button>
           </div>
         </div>
@@ -73,49 +77,107 @@
         <div class="card product-card">
           <img src="https://www.ebw.co.bw/wp-content/uploads/2023/04/340750046_256372103502973_408375718205622710_n.jpeg" class="card-img-top" alt="Jacket">
           <div class="card-body text-center">
-            <p class="card-text">Bold and Elegant. Proctor Jacket for P5000.00</p>
-            <button class="btn add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card product-card">
-          <img src="BK Pandas.jpg" class="card-img-top" alt="Limited Edition Shoes">
-          <div class="card-body text-center">
-            <p class="card-text">Limited Edition: Stylish Shoes for P3800.00</p>
-            <button class="btn add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card product-card">
-          <img src="https://th.bing.com/th/id/OIP.UwGetgmbDot8u7-ca-yk-QHaLG?rs=1&pid=ImgDetMain" class="card-img-top" alt="Slides">
-          <div class="card-body text-center">
-            <p class="card-text">Comfy Slides for P900.00</p>
-            <button class="btn add-to-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card product-card">
-          <img src="https://th.bing.com/th/id/OIP.-nJ_Nk8Ab3dH2O9GB8PaEgHaLG?rs=1&pid=ImgDetMain" class="card-img-top" alt="Sandals">
-          <div class="card-body text-center">
-            <p class="card-text">Chic & Comfy. Proctor Sandals for P1200.00</p>
+            <h5 class="card-title">Proctor Jacket</h5>
+            <p class="card-text">Bold and Elegant</p>
+            <p class="price">P5000.00</p>
             <button class="btn add-to-cart">Add to Cart</button>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Outro Text -->
-  <div class="container text-center mt-4">
-    <p>The world of fashion awaits you. We're the best in town — with quality, comfort, and drip that lasts.</p>
-  </div>
+  <!-- New Arrivals -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-5">
+          <h2 class="text-center">NEW ARRIVALS</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="BK Pandas.jpg" class="card-img-top" alt="Limited Edition Shoes">
+            <div class="card-body text-center">
+              <h5 class="card-title">Limited Edition Shoes</h5>
+              <p class="card-text">Exclusive Design</p>
+              <p class="price">P3800.00</p>
+              <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="https://th.bing.com/th/id/OIP.UwGetgmbDot8u7-ca-yk-QHaLG?rs=1&pid=ImgDetMain" class="card-img-top" alt="Slides">
+            <div class="card-body text-center">
+              <h5 class="card-title">Comfy Slides</h5>
+              <p class="card-text">Perfect for Summer</p>
+              <p class="price">P900.00</p>
+              <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="https://th.bing.com/th/id/OIP.-nJ_Nk8Ab3dH2O9GB8PaEgHaLG?rs=1&pid=ImgDetMain" class="card-img-top" alt="Sandals">
+            <div class="card-body text-center">
+              <h5 class="card-title">Proctor Sandals</h5>
+              <p class="card-text">Chic & Comfy</p>
+              <p class="price">P1200.00</p>
+              <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2>MONTH END SPECIAL</h2>
+      <p class="lead">20% OFF ALL FOOTWEAR THIS WEEK ONLY</p>
+      <a href="products.html" class="btn btn-outline-light">Shop the Sale</a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 COLLECTIONS BY BK PROCTOR</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5>BK PROCTOR</h5>
+          <p>Premium fashion with Botswana's finest craftsmanship.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Newsletter</h5>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your email">
+              <button class="btn btn-outline-light" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="my-4 bg-light">
+      <div class="text-center">
+        <p class="mb-0">© 2025 COLLECTIONS BY BK PROCTOR. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
