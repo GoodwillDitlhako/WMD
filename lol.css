@@ -1,4 +1,54 @@
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+      }
 
+      header {
+        background-color: #000;
+        color: white;
+        padding: 1.5rem 0;
+      }
+
+      header h1 {
+        margin-bottom: 0;
+      }
+
+      nav a {
+        color: #fff;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      nav a:hover {
+        color: #ff6600;
+      }
+
+      main {
+        padding: 3rem 1rem;
+      }
+
+      footer {
+        background-color: #222;
+        color: #ccc;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 3rem;
+      }
+
+      .contact-info {
+        font-size: 1.1rem;
+        color: #444;
+      }
+
+      .contact-info a {
+        color: #ff6600;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
     body {
       font-family: 'Helvetica Neue', sans-serif;
       background-color: #fff;
