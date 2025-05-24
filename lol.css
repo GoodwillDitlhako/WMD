@@ -51,12 +51,6 @@ body {
 
 /* Hero Section */
 .hero {
-  background-color: var(--gray);
-  padding: 100px 0;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.hero {
   position: relative;
   background: url('background.jpg') no-repeat center center/cover;
   min-height: 70vh;
@@ -69,8 +63,9 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* adjust darkness */
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* adjust 0.5 for more or less darkness */
   z-index: 1;
 }
 
@@ -78,6 +73,7 @@ body {
   position: relative;
   z-index: 2;
 }
+
 
 .hero h1 {
   font-size: 3rem;
