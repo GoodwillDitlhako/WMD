@@ -13,35 +13,118 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
+/* --- NAVBAR STYLING: Black, Red & White --- */
 .navbar {
-  background-color: var(--white) !important;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 15px 0;
+  background-color: #000 !important;
+  transition: box-shadow 0.3s ease;
+  z-index: 999;
 }
 
+/* Add subtle shadow when sticky */
+.navbar.sticky-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Branding */
 .navbar-brand {
-  font-weight: 700;
+  color: white !important;
+  font-weight: bold;
   font-size: 1.5rem;
-  letter-spacing: -0.5px;
 }
 
-.nav-link {
+/* Nav links */
+.navbar .nav-link {
+  color: #fff !important;
   font-weight: 500;
-  margin: 0 15px;
-  color: var(--black) !important;
+  transition: color 0.3s;
 }
 
-.nav-link:hover,
-.search-form .btn:hover,
-.footer-links a:hover,
-.social-icons a:hover {
-  color: var(--red) !important;
+.navbar .nav-link:hover {
+  color: #ff0000 !important; /* Red on hover */
 }
 
-.nav-link.active {
-  color: var(--red) !important;
-  font-weight: 600;
+/* Search button */
+.search-form .btn {
+  border: 2px solid red;
+  color: red;
+  transition: all 0.3s ease;
+}
+
+.search-form .btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Cart Icon */
+.navbar a .fa-shopping-bag {
+  font-size: 1.2rem;
+  color: white;
+}
+
+
+/* Search button */
+.search-form .btn {
+  border: 2px solid red;
+  color: red;
+  transition: all 0.3s ease;
+}
+
+.search-form .btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Cart Icon */
+.navbar a .fa-shopping-bag {
+  font-size: 1.2rem;
+  color: white;
+}
+/* --- NAVBAR STYLING: Black, Red & White --- */
+.navbar {
+  background-color: #000 !important;
+  transition: box-shadow 0.3s ease;
+  z-index: 999;
+}
+
+/* Add subtle shadow when sticky */
+.navbar.sticky-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Branding */
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Nav links */
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ff0000 !important; /* Red on hover */
+}
+
+/* Search button */
+.search-form .btn {
+  border: 2px solid red;
+  color: red;
+  transition: all 0.3s ease;
+}
+
+.search-form .btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Cart Icon */
+.navbar a .fa-shopping-bag {
+  font-size: 1.2rem;
+  color: white;
 }
 
 /* Search Form */
