@@ -13,35 +13,417 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar */
+/* --- NAVBAR STYLING: Black, Red & White --- */
+
+<a class="navbar-brand" href="#">
+  <img src="your-logo.png" alt="BK Proctor Logo" class="logo">
+</a>
+
 .navbar {
-  background-color: var(--black) !important;
-  padding: 15px 0;
+  background-color: #000 !important;
+  transition: box-shadow 0.3s ease;
+  z-index: 999;
 }
 
+/* Add subtle shadow when sticky */
+.navbar.sticky-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Branding */
 .navbar-brand {
-  font-weight: 700;
+  color: black !important;
+  font-weight: bold;
   font-size: 1.5rem;
-  letter-spacing: -0.5px;
-  color: var(--white) !important;
 }
 
-.nav-link {
+/* Nav links */
+.navbar .nav-link {
+  color: #fff !important;
   font-weight: 500;
-  margin: 0 15px;
-  color: var(--white) !important;
+  transition: color 0.3s;
 }
 
-.nav-link:hover {
-  color: var(--red) !important;
+.navbar .nav-link:hover {
+  color: #ff0000 !important; /* Red on hover */
 }
 
-.navbar .fa-shopping-bag,
-.navbar .btn {
-  color: var(--white) !important;
+/* Search button */
+.search-form .btn {
+  border: 2px solid red;
+  color: red;
+  transition: all 0.3s ease;
 }
 
-.search-form input.form-control {
-  background-color: var(--white);
+.search-form .btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Cart Icon */
+.navbar a .fa-shopping-bag {
+  font-size: 1.2rem;
+  color: black;
+}
+
+
+/* Search button */
+.search-form .btn {
+  border: 2px solid red;
+  color: red;
+  transition: all 0.3s ease;
+}
+
+.search-form .btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Cart Icon */
+.navbar a .fa-shopping-bag {
+  font-size: 1.2rem;
+  color: white;
+}
+/* --- NAVBAR STYLING: Black, Red & White --- */
+.navbar {
+  background-color: #000 !important;
+  transition: box-shadow 0.3s ease;
+  z-index: 999;
+}
+
+/* Add subtle shadow when sticky */
+.navbar.sticky-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Branding */
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Nav links */
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ff0000 !important; /* Red on hover */
+}
+
+/* Search button */
+.search-form .btn {
+  border: 2px solid red;
+  color: red;
+  transition: all 0.3s ease;
+}
+
+.search-form .btn:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Cart Icon */
+.navbar a .fa-shopping-bag {
+  font-size: 1.2rem;
+  color: black;
+}
+
+/* Search Form */
+.search-form .btn {
   color: var(--black);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('background.jpg') no-repeat center center/cover;
+  min-height: 70vh;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* adjust 0.5 for more or less darkness */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Product Cards */
+.product-card {
+  border: none;
+  border-radius: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  min-height: 3rem;
+}
+
+.card-text {
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--red);
+  margin: 15px 0;
+}
+
+.btn-cart {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 8px 20px;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.btn-cart:hover {
+  background-color: var(--red);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 0;
+}
+
+.contact-card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: var(--red);
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  background-color: var(--gray);
+  padding: 40px;
+}
+
+.form-control {
+  border-radius: 0;
+  border: 1px solid var(--dark-gray);
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.btn-submit {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.btn-submit:hover {
+  background-color: var(--red);
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 0;
+}
+
+.about-section h2 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.about-section h2:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: var(--red);
+  bottom: -10px;
+  left: 0;
+}
+
+.founder-card {
+  border: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.founder-img, .team-img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  border: 5px solid var(--gray);
+}
+
+.founder-img {
+  width: 200px;
+  height: 200px;
+}
+
+.values-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.values-list li {
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.values-list li:before {
+  content: '\f00c';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--red);
+  position: absolute;
+  left: 0;
+}
+
+/* Team Section */
+.team-section {
+  background-color: var(--gray);
+  padding: 60px 0;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Store Info */
+.store-info {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 40px;
+}
+
+.store-info h3 {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: var(--white);
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: var(--white);
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .product-card img {
+    height: 250px;
+  }
+  
+  .contact-card, 
+  .contact-form, 
+  .store-info,
+  .about-section,
+  .team-section {
+    padding: 20px;
+  }
+  
+  .navbar-nav {
+    margin-top: 15px;
+  }
+  
+  .search-form {
+    margin-top: 15px;
+  }
 }
