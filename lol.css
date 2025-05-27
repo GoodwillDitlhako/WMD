@@ -14,11 +14,6 @@ body {
 }
 
 /* --- NAVBAR STYLING: Black, Red & White --- */
-
-<a class="navbar-brand" href="#">
-  <img src="your-logo.png" alt="BK Proctor Logo" class="logo">
-</a>
-
 .navbar {
   background-color: #000 !important;
   transition: box-shadow 0.3s ease;
