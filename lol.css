@@ -1,179 +1,563 @@
-body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f9f9f9;
-      }
-
-      header {
-        background-color: #000;
-        color: white;
-        padding: 1.5rem 0;
-      }
-
-      header h1 {
-        margin-bottom: 0;
-      }
-
-      nav a {
-        color: #fff;
-        margin: 0 1rem;
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      nav a:hover {
-        color: #ff6600;
-      }
-
-      main {
-        padding: 3rem 1rem;
-      }
-
-      footer {
-        background-color: #222;
-        color: #ccc;
-        text-align: center;
-        padding: 1rem 0;
-        margin-top: 3rem;
-      }
-
-      .contact-info {
-        font-size: 1.1rem;
-        color: #444;
-      }
-
-      .contact-info a {
-        color: #ff6600;
-        text-decoration: none;
-      }
-
-      .contact-info a:hover {
-        text-decoration: underline;
-      }
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Collections by BK Proctor</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ <link rel="stylesheet" href="lol.css">
+   <style>
+    :root {
+      --black: #111111;
+      --white: #ffffff;
+      --gray: #f5f5f5;
+      --dark-gray: #757575;
+      --red: #ff0000;
+    }
+    
     body {
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fff;
-      color: #111;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: var(--black);
+      background-color: var(--white);
+      line-height: 1.6;
     }
-
-    #logo {
-      width: 150px;
-      height: 150px;
-      background-image: url('https://yt3.ggpht.com/ytc/AMLnZu_SloYtp3fW32GMxZ_4K6lpVFJjcOzOyp133NsO=s900-c-k-c0x00ffffff-no-rj');
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-      margin: 0 auto;
+    
+    /* Navbar */
+    .navbar {
+      background-color: var(--white) !important;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 15px 0;
     }
-
-    #slogan {
-      text-align: center;
-      font-size: 2rem;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
+    
     .navbar-brand {
       font-weight: 700;
-      letter-spacing: 1px;
+      font-size: 1.5rem;
+      letter-spacing: -0.5px;
     }
-
-    .hero-text {
+    
+    .nav-link {
+      font-weight: 500;
+      margin: 0 15px;
+      color: var(--black) !important;
+    }
+    
+    .nav-link:hover {
+      color: var(--red) !important;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background-color: var(--gray);
+      padding: 100px 0;
       text-align: center;
-      margin: 2rem 0;
+      margin-bottom: 50px;
     }
-
-    .product-card img {
-      height: 250px;
-      object-fit: cover;
+    
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
     }
-
-    .add-to-cart {
-      background-color: #ff6600;
+    
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    /* About Content */
+    .about-section {
+      padding: 60px 0;
+    }
+    
+    .about-section h2 {
+      font-weight: 700;
+      margin-bottom: 30px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .about-section h2:after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 3px;
+      background: var(--red);
+      bottom: -10px;
+      left: 0;
+    }
+    
+    .founder-card {
       border: none;
-      font-weight: bold;
-    }
-
-    .add-to-cart:hover {
-      background-color: #cc5500;
-    }
-
-    footer {
       text-align: center;
-      padding: 2rem 0;
-      background-color: #111;
-      color: white;
-      margin-top: 3rem;
+      margin-top: 30px;
     }
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f9f9f9;
-      }
+    
+    .founder-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px;
+      border: 5px solid var(--gray);
+    }
+    
+    .values-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .values-list li {
+      margin-bottom: 15px;
+      padding-left: 30px;
+      position: relative;
+    }
+    
+    .values-list li:before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: var(--red);
+      position: absolute;
+      left: 0;
+    }
+    
+    /* Team Section */
+    .team-section {
+      background-color: var(--gray);
+      padding: 60px 0;
+    }
+    
+    .team-member {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .team-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 15px;
+    }
+    
+    /* Footer */
+    .footer {
+      background-color: var(--black);
+      color: var(--white);
+      padding: 40px 0 20px;
+      text-align: center;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .footer-links a {
+      color: var(--white);
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    
+    .footer-links a:hover {
+      color: var(--red);
+    }
+    
+    .social-icons {
+      margin-bottom: 20px;
+    }
+    
+    .social-icons a {
+      color: var(--white);
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">BK PROCTOR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <form class="d-flex search-form">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <a href="cart.html" class="ms-3 text-dark"><i class="fas fa-shopping-bag"></i></a>
+      </div>
+    </div>
+  </nav>
 
-      header {
-        background-color: #000;
-        color: #fff;
-        padding: 2rem 0;
-        text-align: center;
-      }
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Our Story</h1>
+      <p>Discover the passion and craftsmanship behind Collections by BK Proctor</p>
+    </div>
+  </header>
 
-      header h1 {
-        margin: 0;
-        font-size: 2.5rem;
-      }
+  <!-- Main Content -->
+  <main class="container">
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Who We Are</h2>
+          <p>Collections by BK Proctor is a premium fashion brand based in Botswana, specializing in high-quality footwear, accessories, and apparel. Founded in 2018, we've grown from a small local business to one of Botswana's most recognized fashion brands.</p>
+          <p>Our mission is to combine contemporary style with traditional craftsmanship, creating products that stand out for their quality, comfort, and unique design.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://www.celebrityworld.co.bw/wp-content/uploads/2022/04/bk3-1024x951.jpg" alt="BK Proctor Store" class="img-fluid rounded">
+        </div>
+      </div>
+    </section>
 
-      nav {
-        background-color: #111;
-        padding: 0.75rem 0;
-        text-align: center;
-      }
+    <!-- Founder Section -->
+    <section class="about-section">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="founder-card">
+            <img src="https://www.ebw.co.bw/wp-content/uploads/2023/04/340750046_256372103502973_408375718205622710_n.jpeg" alt="BK Proctor Founder" class="founder-img">
+            <h3>BK Proctor</h3>
+            <p class="text-muted">Founder & Creative Director</p>
+            <p>"I started this brand with a vision to put Botswana on the global fashion map. Every piece we create tells a story of our heritage and our aspirations."</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      nav a {
-        color: #fff;
-        margin: 0 1rem;
-        text-decoration: none;
-        font-weight: 500;
-      }
+    <!-- Values Section -->
+    <section class="about-section">
+      <h2>Our Core Values</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h4><i class="fas fa-star text-danger me-2"></i>Quality</h4>
+          <p>We use only premium materials and pay meticulous attention to every detail in our craftsmanship.</p>
+        </div>
+        <div class="col-md-4">
+          <h4><i class="fas fa-lightbulb text-danger me-2"></i>Innovation</h4>
+          <p>We constantly push boundaries to create fresh, contemporary designs that stand out.</p>
+        </div>
+        <div class="col-md-4">
+          <h4><i class="fas fa-heart text-danger me-2"></i>Authenticity</h4>
+          <p>Every product reflects our Botswana heritage while embracing global fashion trends.</p>
+        </div>
+      </div>
+      <ul class="values-list mt-4">
+        <li>100% locally designed and crafted in Botswana</li>
+        <li>Ethically sourced materials</li>
+        <li>Sustainable production practices</li>
+        <li>Commitment to customer satisfaction</li>
+      </ul>
+    </section>
 
-      nav a:hover {
-        color: #ff6600;
-      }
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Meet Our Team</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Designer" class="team-img">
+              <h5>Amanda K.</h5>
+              <p class="text-muted">Lead Designer</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Production Manager" class="team-img">
+              <h5>David M.</h5>
+              <p class="text-muted">Production Manager</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Marketing Director" class="team-img">
+              <h5>Sarah T.</h5>
+              <p class="text-muted">Marketing Director</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Customer Service" class="team-img">
+              <h5>John P.</h5>
+              <p class="text-muted">Customer Service</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      .product-card {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-        border: none;
-        transition: transform 0.3s;
-      }
+    <!-- Achievements -->
+    <section class="about-section">
+      <h2>Our Achievements</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-trophy text-danger me-2"></i> Awards</h5>
+              <ul>
+                <li>2023 Botswana Fashion Awards - Brand of the Year</li>
+                <li>2022 Southern Africa Design Excellence Award</li>
+                <li>2021 Gaborone Young Entrepreneur of the Year</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-newspaper text-danger me-2"></i> Media Features</h5>
+              <ul>
+                <li>Featured in Botswana's Top 10 Emerging Brands - Forbes Africa</li>
+                <li>Spotlight on Botswana Fashion Week 2023</li>
+                <li>Cover story in The Voice Lifestyle Magazine</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-      .product-card:hover {
-        transform: scale(1.03);
-      }
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <p>© 2025 COLLECTIONS BY BK PROCTOR. All rights reserved.</p>
+    </div>
+  </footer>
 
-      .card-img-top {
-        height: 250px;
-        object-fit: cover;
-      }
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
-      .price {
-        color: #28a745;
-        font-weight: bold;
-        font-size: 1.1rem;
-      }
 
-      .btn-cart {
-        background-color: #000;
-        color: #fff;
-        border: none;
-      }
 
-      .btn-cart:hover {
-        background-color: #ff6600;
-        color: #fff;
-      }
+  
 
-      footer {
-        background-color: #222;
-        color: #ccc;
-        text-align: center;
-        padding: 1rem 0;
-        margin-top: 3rem;
-      }
+
+
+
+
+
+
+    
+
+    . href="index.html">BK PROCTOR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <form class="d-flex search-form">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <a href="cart.html" class="ms-3"><i class="fas fa-shopping-bag"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Our Story</h1>
+      <p>Discover the passion and craftsmanship behind Collections by BK Proctor</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Who We Are</h2>
+          <p>Collections by BK Proctor is a premium fashion brand based in Botswana, specializing in high-quality footwear, accessories, and apparel. Founded in 2018, we've grown from a small local business to one of Botswana's most recognized fashion brands.</p>
+          <p>Our mission is to combine contemporary style with traditional craftsmanship, creating products that stand out for their quality, comfort, and unique design.</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://www.celebrityworld.co.bw/wp-content/uploads/2022/04/bk3-1024x951.jpg" alt="BK Proctor Store" class="img-fluid rounded">
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="about-section">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="founder-card">
+            <img src="https://www.ebw.co.bw/wp-content/uploads/2023/04/340750046_256372103502973_408375718205622710_n.jpeg" alt="BK Proctor Founder" class="founder-img">
+            <h3>BK Proctor</h3>
+            <p class="text-muted">Founder & Creative Director</p>
+            <p>"I started this brand with a vision to put Botswana on the global fashion map. Every piece we create tells a story of our heritage and our aspirations."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="about-section">
+      <h2>Our Core Values</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h4><i class="fas fa-star text-danger me-2"></i>Quality</h4>
+          <p>We use only premium materials and pay meticulous attention to every detail in our craftsmanship.</p>
+        </div>
+        <div class="col-md-4">
+          <h4><i class="fas fa-lightbulb text-danger me-2"></i>Innovation</h4>
+          <p>We constantly push boundaries to create fresh, contemporary designs that stand out.</p>
+        </div>
+        <div class="col-md-4">
+          <h4><i class="fas fa-heart text-danger me-2"></i>Authenticity</h4>
+          <p>Every product reflects our Botswana heritage while embracing global fashion trends.</p>
+        </div>
+      </div>
+      <ul class="values-list mt-4">
+        <li>100% locally designed and crafted in Botswana</li>
+        <li>Ethically sourced materials</li>
+        <li>Sustainable production practices</li>
+        <li>Commitment to customer satisfaction</li>
+      </ul>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Meet Our Team</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Designer" class="team-img">
+              <h5>Amanda K.</h5>
+              <p class="text-muted">Lead Designer</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Production Manager" class="team-img">
+              <h5>David M.</h5>
+              <p class="text-muted">Production Manager</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Marketing Director" class="team-img">
+              <h5>Sarah T.</h5>
+              <p class="text-muted">Marketing Director</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Customer Service" class="team-img">
+              <h5>John P.</h5>
+              <p class="text-muted">Customer Service</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="about-section">
+      <h2>Our Achievements</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-trophy text-danger me-2"></i> Awards</h5>
+              <ul>
+                <li>2023 Botswana Fashion Awards - Brand of the Year</li>
+                <li>2022 Southern Africa Design Excellence Award</li>
+                <li>2021 Gaborone Young Entrepreneur of the Year</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title"><i class="fas fa-newspaper text-danger me-2"></i> Media Features</h5>
+              <ul>
+                <li>Featured in Botswana's Top 10 Emerging Brands - Forbes Africa</li>
+                <li>Spotlight on Botswana Fashion Week 2023</li>
+                <li>Cover story in The Voice Lifestyle Magazine</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <p>© 2025 COLLECTIONS BY BK PROCTOR. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+.
+
+
+
+
+
